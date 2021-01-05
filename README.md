@@ -1,12 +1,10 @@
-Heroku buildpack: Hugo
-===
+# Heroku buildpack: Hugo
 
 This is a [Heroku buildpack](https://devcenter.heroku.com/articles/buildpacks)
-for sites powered by [Hugo](https://github.com/spf13/hugo).
+for sites powered by [Hugo](https://github.com/gohugoio/hugo).
 It uses the latest stable version of Hugo.
 
-Usage
-===
+# Usage
 
 Create a Heroku application using this buildpack:
 
@@ -33,13 +31,12 @@ $ git push heroku master
 $ heroku open
 ```
 
-Using themes
-===
+# Using themes
 
 This buildpack provides a simple api to use custom themes, just add a `.hugotheme`
 file in the root of your application with the url of your theme.
 
-***Example***
+**_Example_**
 
 To fetch the great [hyde](https://github.com/spf13/hyde.git) theme:
 
@@ -50,20 +47,17 @@ https://github.com/spf13/hyde.git
 [Here](http://immense-hollows-6319.herokuapp.com/) is an example application,
 and [here](https://github.com/roperzh/example-heroku-buildpack-hugo) is the code.
 
-Alternative method
----
+## Alternative method
 
 If you don't like the idea of a `.hugotheme` file, you can simply manage your
 themes with [git submodules](http://git-scm.com/book/en/Git-Tools-Submodules).
 Heroku will take care to fetch all the submodules in your project.
 
-Important notes
-===
+# Important notes
 
 Don't forget to configure your hugo `baseurl` with the url of your application, using **https://** not http://
 
-Contributing
-===
+# Contributing
 
 1- Fork it
 
@@ -75,8 +69,7 @@ Contributing
 
 5- Create new Pull Request
 
-License
-===
+# License
 
 The MIT License (MIT)
 
